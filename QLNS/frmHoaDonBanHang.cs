@@ -28,6 +28,7 @@ namespace QLNS
         {
             gridHD.DataSource = BUS.HoaDonBanHang.Table;
             lblSoHoaDon.Text = string.Format("Tổng cộng: {0} hóa đơn", gridViewHD.RowCount);
+            cboKhachHang.Enabled = cboNhanVien.Enabled = false;
         }
         public void NapGiaoDienPanelTimKiem()
         {
@@ -132,6 +133,7 @@ namespace QLNS
         {
             Form hd = new frmLapHoaDonBanHang();
             hd.Text = "Lập hóa đơn bán hàng";
+            hd.MdiParent = this.MdiParent;
             hd.Show();
             NapGiaoDien();
         }
@@ -178,6 +180,11 @@ namespace QLNS
             {
                 XtraMessageBox.Show("Có lỗi xảy ra!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void gridHD_DoubleClick(object sender, EventArgs e)
+        {
+            btnSua_Click(sender, e);
         }
     }
 }

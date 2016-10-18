@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="barButtonItem1.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnLapHoaDonMoi.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABN0RVh0VGl0
         bGUATmV3O05ld1NhbGVzOw2L5E4AAAIUSURBVFhH7dbBSlVxEMfxK4pSbQJJoq0gorWwgoo2LQKDDB8g
@@ -133,7 +133,7 @@
         jM8Kxb+QPjxO6cPj0/R+AZH1tu9/HSt0AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barButtonItem2.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnXemCacHoaDon.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABp0RVh0VGl0
         bGUAU2FsZXNBbmFseXNpcztTYWxlczukskOOAAABnElEQVRYR92UvUoDURCFI4gvIljoa9ja+Ao+g52V
@@ -158,12 +158,12 @@
   </data>
   <data name="barButtonItem4.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAKnRFWHRUaXRsZQBIZWFkZXI7
-        QWRkIEdyb3VwIEhlYWRlcjtIZWFkZXI7R3JvdXDHutNxAAAAn0lEQVRYR+2S0QmAMAxEu6DrOIB0BMER
-        XMAPB3GfaCCFovdRmhIJ5OD93EfuejQR0a9A0xJoWgJNS6DJ5JxJC2vet5pUwzmf4EI5oJUEOy8wLWcT
-        SBJsV0CCmngUBZz8AY0k2HmB9bi6YEmwrsAgwRxoMqMWYMktmANNZuQC6gLodS0UxQKxQCzgfwGtuguM
-        5H2/AE1LoGkJNC2Bph2UbiiKf5fOYI/0AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqdEVYdFRpdGxlAEhlYWRlcjtBZGQgR3JvdXAgSGVh
+        ZGVyO0hlYWRlcjtHcm91cMe603EAAACfSURBVFhH7ZLRCYAwDES7oOs4gHQEwRFcwA8HcZ9oIIWi91Ga
+        Egnk4P3cR+56NBHRr0DTEmhaAk1LoMnknEkLa963mlTDOZ/gQjmglQQ7LzAtZxNIEmxXQIKaeBQFnPwB
+        jSTYeYH1uLpgSbCuwCDBHGgyoxZgyS2YA01m5ALqAuh1LRTFArFALOB/Aa26C4zkfb8ATUugaQk0LYGm
+        HZRuKIp/l85gj/QAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="barButtonItem5.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -511,5 +511,8 @@
   </data>
   <metadata name="defaultLookAndFeel1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="xtraTabbedMdiManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>184, 17</value>
   </metadata>
 </root>

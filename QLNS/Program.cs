@@ -21,7 +21,8 @@ namespace QLNS
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
             //Application.Run(new frmLapHoaDonBanHang());
-            Application.Run(new frmHoaDonBanHang());
+            //Application.Run(new frmHoaDonBanHang());
+            Application.Run(new frmMain());
         }
     }
 }
