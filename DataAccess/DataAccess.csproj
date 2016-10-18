@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CTHoaDonBanHang.cs" />
     <Compile Include="DBConnect.cs" />
     <Compile Include="HoaDonBanHang.cs" />
     <Compile Include="KhachHang.cs" />

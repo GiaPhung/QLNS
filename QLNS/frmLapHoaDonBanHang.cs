@@ -31,6 +31,8 @@ namespace QLNS
                 BUS.KhachHang = new BusinessLogic.KhachHang();
             if (BUS.HoaDonBanHang == null)
                 BUS.HoaDonBanHang = new BusinessLogic.HoaDonBanHang();
+            if (BUS.CTHoaDonBanHang == null)
+                BUS.CTHoaDonBanHang = new BusinessLogic.CTHoaDonBanHang();
         }
 
         //Nạp giao diện mặc định
