@@ -68,8 +68,7 @@ namespace QLNS
                     DataRow r = tbCTHD.NewRow();
                     DataRow _r = BUS.SanPham.Table.Select("MaSanPham = '" + item["MaSanPham"] + "'")[0];
                     r["MaSanPham"] = item["MaSanPham"];
-                    r["TenSanPham"] = _r["TenSanPham"];
-                    r["DonVi"] = _r["DonVi"];
+                    r["TenSanPham"] = _r["TenSanPham"];                  
                     r["SoLuong"] = item["SoLuong"];
                     r["ThanhTien"] = Convert.ToInt32(r["SoLuong"]) * Convert.ToInt32(_r["GiaBan"]);
 
