@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLNS.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,11 @@ namespace QLNS
         public frmMain()
         {
             InitializeComponent();
+        }
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            lblTimeNow.Caption = DateTime.Now.ToString("HH:mm:ss tt");
+            lblDate.Caption = DateTime.Now.ToString("dd/MM/yyyy");
         }
         public Form IsActive(Type type)
         {
@@ -50,6 +56,15 @@ namespace QLNS
                 lapHD.MdiParent = this;
                 lapHD.Show();
             }
+        }
+        public void NapStatusBar()
+        {
+            lblTenNhaSach.Caption = Settings.Default.StoreInfo_Name;
+        }
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            NapStatusBar();
+            timer.Start();
         }
     }
 }

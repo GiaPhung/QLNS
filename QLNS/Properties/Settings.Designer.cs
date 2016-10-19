@@ -26,5 +26,20 @@ namespace QLNS.Properties
                 return defaultInstance;
             }
         }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string StoreInfo_Name
+        {
+            get
+            {
+                return ((string)(this["StoreInfo_Name"]));
+            }
+            set
+            {
+                this["StoreInfo_Name"] = value;
+            }
+        }
     }
 }
