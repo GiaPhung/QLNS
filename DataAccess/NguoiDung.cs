@@ -27,7 +27,7 @@ namespace DataAccess
         }
         public DataTable SelectAll()
         {
-            return GetData("select * from KHACHHANG");
+            return GetData("select * from NGUOIDUNG");
         }
         public bool Them(DataTransfer.NguoiDung nd)
         {
