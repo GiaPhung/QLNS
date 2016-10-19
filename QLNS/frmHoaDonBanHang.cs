@@ -33,8 +33,10 @@ namespace QLNS
         public void NapGiaoDienPanelTimKiem()
         {
             //combobox staff
-            //cboNhanVien.Properties.Columns.Add(new LookUpColumnInfo("HoTen"));
-            //cboNhanVien.Properties.DataSource = BUS.Ng
+            cboNhanVien.Properties.Columns.Add(new LookUpColumnInfo("HoTen"));
+            cboNhanVien.Properties.DataSource = BUS.NguoiDung.Table;
+            cboNhanVien.Properties.DisplayMember = "HoTen";
+            cboNhanVien.Properties.ValueMember = "MaNguoiDung";
 
             //combobox customer
             cboKhachHang.Properties.Columns.Add(new LookUpColumnInfo("HoTen"));
@@ -52,8 +54,8 @@ namespace QLNS
         {
             if (BUS.HoaDonBanHang == null)
                 BUS.HoaDonBanHang = new BusinessLogic.HoaDonBanHang();
-            //if (BUS.NguoiDung == null)
-            //    BUS.NguoiDung = new BusinessLogic.NguoiDung();
+            if (BUS.NguoiDung == null)
+                BUS.NguoiDung = new BusinessLogic.NguoiDung();
             if (BUS.KhachHang == null)
                 BUS.KhachHang = new BusinessLogic.KhachHang();
         }

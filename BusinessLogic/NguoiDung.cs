@@ -7,7 +7,7 @@ using System.Data;
 
 namespace BusinessLogic
 {
-    class NguoiDung
+    public class NguoiDung
     {
         private DataAccess.NguoiDung access = new DataAccess.NguoiDung();
 
