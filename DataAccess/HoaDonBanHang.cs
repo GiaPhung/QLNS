@@ -65,12 +65,12 @@ namespace DataAccess
                 DataRow r = dt.Rows.Find(maHoaDon);
 
                 //tìm và xóa tất cả khóa ngoại
-                //DataAccess.CTHoaDonBanHang cthd = new CTHoaDonBanHang();
-                //DataRow[] cthd_row = cthd.Table.Select("MaHoaDon like '" + maHoaDon + "'");
-                //foreach (DataRow item in cthd_row)
-                //{
-                //    cthd.Xoa(item["MaHoaDon"].ToString(), item["MaSanPham"].ToString());
-                //}
+                DataAccess.CTHoaDonBanHang cthd = new CTHoaDonBanHang();
+                DataRow[] cthd_row = cthd.Table.Select("MaHoaDon like '" + maHoaDon + "'");
+                foreach (DataRow item in cthd_row)
+                {
+                    cthd.Xoa(item["MaHoaDon"].ToString(), item["MaSanPham"].ToString());
+                }
 
                 //xóa dòng
                 if (r != null)
