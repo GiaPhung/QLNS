@@ -66,6 +66,11 @@
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.lblTenNhaSach = new DevExpress.XtraBars.BarStaticItem();
+            this.lblTimeNow = new DevExpress.XtraBars.BarStaticItem();
+            this.lblDate = new DevExpress.XtraBars.BarStaticItem();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -95,9 +100,12 @@
             this.barButtonItem17,
             this.barButtonItem18,
             this.barButtonItem19,
-            this.barButtonItem20});
+            this.barButtonItem20,
+            this.lblTenNhaSach,
+            this.lblTimeNow,
+            this.lblDate});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 22;
+            this.ribbonControl1.MaxItemId = 26;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -106,6 +114,7 @@
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.Size = new System.Drawing.Size(914, 147);
+            this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
             // btnLapHoaDonMoi
@@ -386,20 +395,70 @@
             // 
             this.xtraTabbedMdiManager.MdiParent = this;
             // 
+            // ribbonStatusBar1
+            // 
+            this.ribbonStatusBar1.ItemLinks.Add(this.lblTenNhaSach);
+            this.ribbonStatusBar1.ItemLinks.Add(this.lblTimeNow);
+            this.ribbonStatusBar1.ItemLinks.Add(this.lblDate);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 451);
+            this.ribbonStatusBar1.Name = "ribbonStatusBar1";
+            this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(914, 23);
+            // 
+            // lblTenNhaSach
+            // 
+            this.lblTenNhaSach.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
+            this.lblTenNhaSach.Caption = "<Store Name>";
+            this.lblTenNhaSach.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.lblTenNhaSach.Glyph = ((System.Drawing.Image)(resources.GetObject("lblTenNhaSach.Glyph")));
+            this.lblTenNhaSach.Id = 23;
+            this.lblTenNhaSach.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("lblTenNhaSach.LargeGlyph")));
+            this.lblTenNhaSach.Name = "lblTenNhaSach";
+            this.lblTenNhaSach.TextAlignment = System.Drawing.StringAlignment.Near;
+            // 
+            // lblTimeNow
+            // 
+            this.lblTimeNow.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.lblTimeNow.Caption = "<Time>";
+            this.lblTimeNow.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.lblTimeNow.Glyph = ((System.Drawing.Image)(resources.GetObject("lblTimeNow.Glyph")));
+            this.lblTimeNow.Id = 24;
+            this.lblTimeNow.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("lblTimeNow.LargeGlyph")));
+            this.lblTimeNow.Name = "lblTimeNow";
+            this.lblTimeNow.TextAlignment = System.Drawing.StringAlignment.Near;
+            // 
+            // lblDate
+            // 
+            this.lblDate.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.lblDate.Caption = "<Date>";
+            this.lblDate.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.lblDate.Glyph = ((System.Drawing.Image)(resources.GetObject("lblDate.Glyph")));
+            this.lblDate.Id = 25;
+            this.lblDate.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("lblDate.LargeGlyph")));
+            this.lblDate.Name = "lblDate";
+            this.lblDate.TextAlignment = System.Drawing.StringAlignment.Near;
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // frmMain
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 474);
+            this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Name = "frmMain";
             this.Ribbon = this.ribbonControl1;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StatusBar = this.ribbonStatusBar1;
             this.Text = "Quản lý Nhà sách";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).EndInit();
             this.ResumeLayout(false);
@@ -445,6 +504,11 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager;
+        private DevExpress.XtraBars.BarStaticItem lblTenNhaSach;
+        private DevExpress.XtraBars.BarStaticItem lblTimeNow;
+        private DevExpress.XtraBars.BarStaticItem lblDate;
+        private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
+        private System.Windows.Forms.Timer timer;
     }
 }
 
