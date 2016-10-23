@@ -45,6 +45,7 @@
     <Compile Include="CTPhieuNhap.cs" />
     <Compile Include="HoaDonBanHang.cs" />
     <Compile Include="KhachHang.cs" />
+    <Compile Include="LoaiSanPham.cs" />
     <Compile Include="NguoiDung.cs" />
     <Compile Include="PhieuNhap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
