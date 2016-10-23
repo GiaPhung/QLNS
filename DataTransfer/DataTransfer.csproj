@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CTHoaDonBanHang.cs" />
+    <Compile Include="DacQuyen.cs" />
     <Compile Include="CTPhieuNhap.cs" />
     <Compile Include="HoaDonBanHang.cs" />
     <Compile Include="KhachHang.cs" />
