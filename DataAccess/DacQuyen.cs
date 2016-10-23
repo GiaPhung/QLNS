@@ -8,16 +8,15 @@ using System.Data.SqlClient;
 
 namespace DataAccess
 {
-    public class NguoiDung : DBConnect
+    public class DacQuyen : DBConnect
     {
         private DataTable dt;
-
         public DataTable Table
         {
             get { return dt; }
             set { dt = value; }
         }
-        public NguoiDung()
+        public DacQuyen()
         {
             //nạp bảng lên
             dt = SelectAll();
@@ -27,24 +26,18 @@ namespace DataAccess
         }
         public DataTable SelectAll()
         {
-            return GetData("select * from NGUOIDUNG");
+            return GetData("select * from DACQUYEN");
         }
-        public bool Them(DataTransfer.NguoiDung nd)
+        public bool Them(DataTransfer.DacQuyen dq)
         {
             try
             {
-                SqlDataAdapter da = new SqlDataAdapter("select * from NGUOIDUNG", Connection);
+                SqlDataAdapter da = new SqlDataAdapter("select * from DACQUYEN", Connection);
 
                 //tạo dòng mới và chèn dữ liệu vào
                 DataRow r = dt.NewRow();
-                r["MaNguoiDung"] = nd.MaNhanVien;
-                r["TenDangNhap"] = nd.TenDangNhap;
-                r["MatKhau"] = nd.MatKhau;
-                r["HoTen"] = nd.HoTen;
-                r["MaDacQuyen"] = nd.MaDacQuyen;
-                r["NgaySinh"] = nd.NgaySinh;
-                r["SoDienThoai"] = nd.SoDienThoai;
-                r["Email"] = nd.Email;
+                r["MaDacQuyen"] = dq.MaDacQuyen;
+                r["TenDacQuyen"] = dq.TenDacQuyen;
                 dt.Rows.Add(r);
 
                 //cập nhật vào CSDL
@@ -57,23 +50,22 @@ namespace DataAccess
                 return false;
             }
         }
-        public bool Xoa(string maNguoiDung)
+        public bool Xoa(string maDacQuyen)
         {
             try
             {
-                SqlDataAdapter da = new SqlDataAdapter("select * from NGUOIDUNG", Connection);
+                SqlDataAdapter da = new SqlDataAdapter("select * from DACQUYEN", Connection);
 
                 //tìm dòng
-                DataRow r = dt.Rows.Find(maNguoiDung);
+                DataRow r = dt.Rows.Find(maDacQuyen);
 
                 //tìm và xóa tất cả khóa ngoại
-                DataAccess.HoaDonBanHang hdbh = new HoaDonBanHang();
-                DataRow[] hdbh_row = hdbh.Table.Select("MaNguoiDung like '" + maNguoiDung + "'");
-                foreach (DataRow item in hdbh_row)
+                DataAccess.NguoiDung nd = new NguoiDung();
+                DataRow[] nd_row = nd.Table.Select("MaDacQuyen like '" + maDacQuyen + "'");
+                foreach (DataRow item in nd_row)
                 {
-                    hdbh.Xoa(item["MaHoaDon"].ToString());
+                    nd.Xoa(item["MaNguoiDung"].ToString());
                 }
-
 
                 //xóa dòng
                 if (r != null)
@@ -89,26 +81,20 @@ namespace DataAccess
                 return false;
             }
         }
-        public bool Sua(DataTransfer.NguoiDung nd)
+        public bool Sua(DataTransfer.DacQuyen dq)
         {
             try
             {
-                SqlDataAdapter da = new SqlDataAdapter("select * from NGUOIDUNG", Connection);
+                SqlDataAdapter da = new SqlDataAdapter("select * from DACQUYEN", Connection);
 
                 //tìm dòng
-                DataRow r = dt.Rows.Find(nd.MaNhanVien);
+                DataRow r = dt.Rows.Find(dq.MaDacQuyen);
 
                 //cập nhật dòng
                 if (r != null)
                 {
-                    r["MaNguoiDung"] = nd.MaNhanVien;
-                    r["TenDangNhap"] = nd.TenDangNhap;
-                    r["MatKhau"] = nd.MatKhau;
-                    r["HoTen"] = nd.HoTen;
-                    r["MaDacQuyen"] = nd.MaDacQuyen;
-                    r["NgaySinh"] = nd.NgaySinh;
-                    r["SoDienThoai"] = nd.SoDienThoai;
-                    r["Email"] = nd.Email;
+                    r["MaDacQuyen"] = dq.MaDacQuyen;
+                    r["TenDacQuyen"] = dq.TenDacQuyen;
                 }
 
                 //cập nhật vào CSDL
