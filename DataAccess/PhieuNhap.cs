@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
-   public class PhieuNhap:DBConnect
+    public class PhieuNhap : DBConnect
     {
         private DataTable dt;
 
@@ -42,7 +42,7 @@ namespace DataAccess
                 r["NgayLap"] = pn.NgayLap;
                 r["TongTien"] = pn.TongTien;
                 r["GhiChu"] = pn.GhiChu;
-                
+
                 dt.Rows.Add(r);
 
                 //cập nhật vào CSDL
@@ -64,8 +64,8 @@ namespace DataAccess
                 //tìm dòng
                 DataRow r = dt.Rows.Find(maPhieu);
 
-               
-                
+
+
                 //xóa dòng
                 if (r != null)
                     r.Delete();
@@ -92,12 +92,12 @@ namespace DataAccess
                 //cập nhật dòng
                 if (r != null)
                 {
-                   
-                r["MaPhieu"] = pn.MaPhieu;
-                r["MaNhanVien"] = pn.MaNhanVien;
-                r["NgayLap"] = pn.NgayLap;
-                r["TongTien"] = pn.TongTien;
-                r["GhiChu"] = pn.GhiChu;
+
+                    r["MaPhieu"] = pn.MaPhieu;
+                    r["MaNhanVien"] = pn.MaNhanVien;
+                    r["NgayLap"] = pn.NgayLap;
+                    r["TongTien"] = pn.TongTien;
+                    r["GhiChu"] = pn.GhiChu;
                 }
 
                 //cập nhật vào CSDL
@@ -109,5 +109,6 @@ namespace DataAccess
             {
                 return false;
             }
+        }
     }
 }
