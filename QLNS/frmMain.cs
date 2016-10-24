@@ -57,13 +57,13 @@ namespace QLNS
                 lapHD.Show();
             }
         }
-        public void NapStatusBar()
-        {
-            lblTenNhaSach.Caption = Settings.Default.StoreInfo_Name;
-        }
+        //public void NapStatusBar()
+        //{
+        //    lblTenNhaSach.Caption = Settings.Default.StoreInfo_Name;
+        //}
         private void frmMain_Load(object sender, EventArgs e)
         {
-            NapStatusBar();
+           // NapStatusBar();
             timer.Start();
         }
     }
