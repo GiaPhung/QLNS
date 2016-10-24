@@ -52,6 +52,9 @@
             this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
+            this.lblTenNhaSach = new DevExpress.XtraBars.BarStaticItem();
+            this.lblTimeNow = new DevExpress.XtraBars.BarStaticItem();
+            this.lblDate = new DevExpress.XtraBars.BarStaticItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -64,12 +67,9 @@
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.lblTenNhaSach = new DevExpress.XtraBars.BarStaticItem();
-            this.lblTimeNow = new DevExpress.XtraBars.BarStaticItem();
-            this.lblDate = new DevExpress.XtraBars.BarStaticItem();
             this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
@@ -250,8 +250,9 @@
             this.barButtonItem16.Caption = "Sao lưu";
             this.barButtonItem16.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem16.Glyph")));
             this.barButtonItem16.Id = 17;
-            this.barButtonItem16.Name = "barButtonItem16";
+            this.barButtonItem16.Name = "btnSaoLuu";
             this.barButtonItem16.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem16.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSaoLuu_ItemClick);
             // 
             // barButtonItem17
             // 
@@ -284,6 +285,39 @@
             this.barButtonItem20.Id = 21;
             this.barButtonItem20.Name = "barButtonItem20";
             this.barButtonItem20.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
+            // lblTenNhaSach
+            // 
+            this.lblTenNhaSach.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
+            this.lblTenNhaSach.Caption = "<Store Name>";
+            this.lblTenNhaSach.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.lblTenNhaSach.Glyph = ((System.Drawing.Image)(resources.GetObject("lblTenNhaSach.Glyph")));
+            this.lblTenNhaSach.Id = 23;
+            this.lblTenNhaSach.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("lblTenNhaSach.LargeGlyph")));
+            this.lblTenNhaSach.Name = "lblTenNhaSach";
+            this.lblTenNhaSach.TextAlignment = System.Drawing.StringAlignment.Near;
+            // 
+            // lblTimeNow
+            // 
+            this.lblTimeNow.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.lblTimeNow.Caption = "<Time>";
+            this.lblTimeNow.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.lblTimeNow.Glyph = ((System.Drawing.Image)(resources.GetObject("lblTimeNow.Glyph")));
+            this.lblTimeNow.Id = 24;
+            this.lblTimeNow.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("lblTimeNow.LargeGlyph")));
+            this.lblTimeNow.Name = "lblTimeNow";
+            this.lblTimeNow.TextAlignment = System.Drawing.StringAlignment.Near;
+            // 
+            // lblDate
+            // 
+            this.lblDate.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.lblDate.Caption = "<Date>";
+            this.lblDate.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.lblDate.Glyph = ((System.Drawing.Image)(resources.GetObject("lblDate.Glyph")));
+            this.lblDate.Id = 25;
+            this.lblDate.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("lblDate.LargeGlyph")));
+            this.lblDate.Name = "lblDate";
+            this.lblDate.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // ribbonPage1
             // 
@@ -387,14 +421,6 @@
             this.ribbonPageGroup8.ShowCaptionButton = false;
             this.ribbonPageGroup8.Text = "Trợ giúp";
             // 
-            // defaultLookAndFeel1
-            // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013";
-            // 
-            // xtraTabbedMdiManager
-            // 
-            this.xtraTabbedMdiManager.MdiParent = this;
-            // 
             // ribbonStatusBar1
             // 
             this.ribbonStatusBar1.ItemLinks.Add(this.lblTenNhaSach);
@@ -405,38 +431,13 @@
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
             this.ribbonStatusBar1.Size = new System.Drawing.Size(914, 23);
             // 
-            // lblTenNhaSach
+            // defaultLookAndFeel1
             // 
-            this.lblTenNhaSach.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Left;
-            this.lblTenNhaSach.Caption = "<Store Name>";
-            this.lblTenNhaSach.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.lblTenNhaSach.Glyph = ((System.Drawing.Image)(resources.GetObject("lblTenNhaSach.Glyph")));
-            this.lblTenNhaSach.Id = 23;
-            this.lblTenNhaSach.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("lblTenNhaSach.LargeGlyph")));
-            this.lblTenNhaSach.Name = "lblTenNhaSach";
-            this.lblTenNhaSach.TextAlignment = System.Drawing.StringAlignment.Near;
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013";
             // 
-            // lblTimeNow
+            // xtraTabbedMdiManager
             // 
-            this.lblTimeNow.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.lblTimeNow.Caption = "<Time>";
-            this.lblTimeNow.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.lblTimeNow.Glyph = ((System.Drawing.Image)(resources.GetObject("lblTimeNow.Glyph")));
-            this.lblTimeNow.Id = 24;
-            this.lblTimeNow.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("lblTimeNow.LargeGlyph")));
-            this.lblTimeNow.Name = "lblTimeNow";
-            this.lblTimeNow.TextAlignment = System.Drawing.StringAlignment.Near;
-            // 
-            // lblDate
-            // 
-            this.lblDate.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.lblDate.Caption = "<Date>";
-            this.lblDate.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.lblDate.Glyph = ((System.Drawing.Image)(resources.GetObject("lblDate.Glyph")));
-            this.lblDate.Id = 25;
-            this.lblDate.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("lblDate.LargeGlyph")));
-            this.lblDate.Name = "lblDate";
-            this.lblDate.TextAlignment = System.Drawing.StringAlignment.Near;
+            this.xtraTabbedMdiManager.MdiParent = this;
             // 
             // timer
             // 

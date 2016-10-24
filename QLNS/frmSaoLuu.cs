@@ -189,38 +189,6 @@ namespace QLNS
             }
         }
 
-        public bool Restore(string Duongdan)
-        {
-            try
-            {
-                string NameDatabases = "[" + Environment.CurrentDirectory + @"\DATABASES\QUANLYBANHANG.MDF" + "]";
-
-                string sqlCommand_0 = "USE [master]";
-
-                string sqlCommand_1 = @"RESTORE DATABASE " + NameDatabases + " FROM DISK = N'" + Duongdan + "' WITH  FILE = 1,  NOUNLOAD, REPLACE , STATS = 5";
-
-                SqlCommand command_0 = new SqlCommand(sqlCommand_0, Connection);
-
-                SqlCommand command_1 = new SqlCommand(sqlCommand_1, Connection);
-
-                OpenConnection();
-
-                command_0.ExecuteNonQuery();
-
-                command_1.ExecuteNonQuery();
-
-                CloseConnection();
-
-                return true;
-            }
-            catch
-            {
-                CloseConnection();
-
-                return false;
-            }
-        }
-
         public void OpenConnection()
         {
             Connection.Open();

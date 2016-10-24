@@ -66,5 +66,19 @@ namespace QLNS
            // NapStatusBar();
             timer.Start();
         }
+
+        private void btnSaoLuu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form saoLuu = IsActive(typeof(frmSaoLuu));
+
+            if (saoLuu != null)
+                saoLuu.Activate();
+            else
+            {
+                saoLuu = new frmSaoLuu();
+                saoLuu.MdiParent = this;
+                saoLuu.Show();
+            }
+        }
     }
 }
