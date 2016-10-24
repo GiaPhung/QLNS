@@ -14,6 +14,7 @@ namespace QLNS
         private static BusinessLogic.CTHoaDonBanHang _cthd = null;
         private static BusinessLogic.SanPham _sp = null;
         private static BusinessLogic.NguoiDung _nd = null;
+        private static BusinessLogic.LoaiSanPham _ls = null;
         #endregion
 
         #region Properties
@@ -41,6 +42,11 @@ namespace QLNS
         {
             get { return _nd; }
             set { _nd = value; }
+        }
+        public static BusinessLogic.LoaiSanPham LoaiSanPham
+        {
+            get { return _ls; }
+            set { _ls = value; }
         }
         #endregion
     }
