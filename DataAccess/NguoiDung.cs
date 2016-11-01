@@ -41,6 +41,7 @@ namespace DataAccess
                 r["TenDangNhap"] = nd.TenDangNhap;
                 r["MatKhau"] = nd.MatKhau;
                 r["HoTen"] = nd.HoTen;
+                r["GioiTinh"] = nd.GioiTinh;
                 r["MaDacQuyen"] = nd.MaDacQuyen;
                 r["NgaySinh"] = nd.NgaySinh;
                 r["SoDienThoai"] = nd.SoDienThoai;
@@ -105,6 +106,7 @@ namespace DataAccess
                     r["TenDangNhap"] = nd.TenDangNhap;
                     r["MatKhau"] = nd.MatKhau;
                     r["HoTen"] = nd.HoTen;
+                    r["GioiTinh"] = nd.GioiTinh;
                     r["MaDacQuyen"] = nd.MaDacQuyen;
                     r["NgaySinh"] = nd.NgaySinh;
                     r["SoDienThoai"] = nd.SoDienThoai;
@@ -120,6 +122,11 @@ namespace DataAccess
             {
                 return false;
             }
+        }
+        public bool DangNhap(string name, string pass)
+        {
+            DataRow[] r = dt.Select(string.Format("TenDangNhap = '{0}'", name));
+            return r.Length > 0 && r[0]["MatKhau"].ToString() == pass;
         }
     }
 }

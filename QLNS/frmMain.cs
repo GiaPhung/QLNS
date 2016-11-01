@@ -14,8 +14,15 @@ namespace QLNS
     {
         public frmMain()
         {
+            frmDangNhap dangNhap = new frmDangNhap();
+            dangNhap.ShowDialog();
+
+            currentUser = dangNhap.NguoiDung;
+
             InitializeComponent();
+            Settings.Default.User_CurrentUser = currentUser != null ? currentUser.MaNhanVien : null;
         }
+        private DataTransfer.NguoiDung currentUser;
         private void timer_Tick(object sender, EventArgs e)
         {
             lblTimeNow.Caption = DateTime.Now.ToString("HH:mm:ss tt");
