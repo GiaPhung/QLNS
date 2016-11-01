@@ -86,7 +86,7 @@
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(847, 511);
+            this.panel1.Size = new System.Drawing.Size(843, 507);
             this.panel1.TabIndex = 9;
             // 
             // labelControl13
@@ -403,7 +403,7 @@
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(847, 511);
+            this.ClientSize = new System.Drawing.Size(843, 507);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
