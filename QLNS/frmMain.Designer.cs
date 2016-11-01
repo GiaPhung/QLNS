@@ -113,7 +113,7 @@
             this.ribbonPage3});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.Size = new System.Drawing.Size(914, 147);
+            this.ribbonControl1.Size = new System.Drawing.Size(948, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
@@ -236,6 +236,7 @@
             this.barButtonItem14.Id = 15;
             this.barButtonItem14.Name = "barButtonItem14";
             this.barButtonItem14.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem14.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCaiDat_ItemClick);
             // 
             // barButtonItem15
             // 
@@ -244,13 +245,14 @@
             this.barButtonItem15.Id = 16;
             this.barButtonItem15.Name = "barButtonItem15";
             this.barButtonItem15.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem15.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNguoiDung_ItemClick);
             // 
             // barButtonItem16
             // 
             this.barButtonItem16.Caption = "Sao lưu";
             this.barButtonItem16.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem16.Glyph")));
             this.barButtonItem16.Id = 17;
-            this.barButtonItem16.Name = "btnSaoLuu";
+            this.barButtonItem16.Name = "barButtonItem16";
             this.barButtonItem16.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonItem16.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSaoLuu_ItemClick);
             // 
@@ -261,6 +263,7 @@
             this.barButtonItem17.Id = 18;
             this.barButtonItem17.Name = "barButtonItem17";
             this.barButtonItem17.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem17.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPhucHoi_ItemClick);
             // 
             // barButtonItem18
             // 
@@ -426,10 +429,10 @@
             this.ribbonStatusBar1.ItemLinks.Add(this.lblTenNhaSach);
             this.ribbonStatusBar1.ItemLinks.Add(this.lblTimeNow);
             this.ribbonStatusBar1.ItemLinks.Add(this.lblDate);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 451);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 576);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(914, 23);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(948, 23);
             // 
             // defaultLookAndFeel1
             // 
@@ -448,7 +451,7 @@
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 474);
+            this.ClientSize = new System.Drawing.Size(948, 599);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
@@ -458,7 +461,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar1;
             this.Text = "Quản lý Nhà sách";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).EndInit();

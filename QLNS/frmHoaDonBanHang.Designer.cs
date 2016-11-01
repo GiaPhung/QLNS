@@ -256,7 +256,7 @@
             this.btnTim.Image = ((System.Drawing.Image)(resources.GetObject("btnTim.Image")));
             this.btnTim.Location = new System.Drawing.Point(61, 322);
             this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(97, 38);
+            this.btnTim.Size = new System.Drawing.Size(97, 36);
             this.btnTim.StyleController = this.layoutControl1;
             this.btnTim.TabIndex = 12;
             this.btnTim.Text = "TÌM KIẾM";
@@ -441,9 +441,9 @@
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 352);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 350);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(211, 94);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(211, 96);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem3
@@ -496,7 +496,7 @@
             this.layoutControlItem4.Control = this.btnTim;
             this.layoutControlItem4.Location = new System.Drawing.Point(49, 310);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(101, 42);
+            this.layoutControlItem4.Size = new System.Drawing.Size(101, 40);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
@@ -505,7 +505,7 @@
             this.emptySpaceItem5.AllowHotTrack = false;
             this.emptySpaceItem5.Location = new System.Drawing.Point(0, 310);
             this.emptySpaceItem5.Name = "emptySpaceItem5";
-            this.emptySpaceItem5.Size = new System.Drawing.Size(49, 42);
+            this.emptySpaceItem5.Size = new System.Drawing.Size(49, 40);
             this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem6
@@ -513,7 +513,7 @@
             this.emptySpaceItem6.AllowHotTrack = false;
             this.emptySpaceItem6.Location = new System.Drawing.Point(150, 310);
             this.emptySpaceItem6.Name = "emptySpaceItem6";
-            this.emptySpaceItem6.Size = new System.Drawing.Size(61, 42);
+            this.emptySpaceItem6.Size = new System.Drawing.Size(61, 40);
             this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem5

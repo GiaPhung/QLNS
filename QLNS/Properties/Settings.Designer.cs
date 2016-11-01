@@ -58,5 +58,17 @@ namespace QLNS.Properties {
                 this["Backup_Path"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("ND001")]
+        public string User_CurrentUser {
+            get {
+                return ((string)(this["User_CurrentUser"]));
+            }
+            set {
+                this["User_CurrentUser"] = value;
+            }
+        }
     }
 }

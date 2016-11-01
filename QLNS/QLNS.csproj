@@ -71,6 +71,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS.cs" />
+    <Compile Include="frmCaiDat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCaiDat.Designer.cs">
+      <DependentUpon>frmCaiDat.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHoaDonBanHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,12 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNguoiDung.Designer.cs">
+      <DependentUpon>frmNguoiDung.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPhucHoi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +115,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCaiDat.resx">
+      <DependentUpon>frmCaiDat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHoaDonBanHang.resx">
       <DependentUpon>frmHoaDonBanHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNguoiDung.resx">
+      <DependentUpon>frmNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPhucHoi.resx">
       <DependentUpon>frmPhucHoi.cs</DependentUpon>
@@ -165,6 +183,36 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_User_32dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_User_64dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1477996005_users-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1477996030_users-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1477997529_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_profile_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

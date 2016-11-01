@@ -61,11 +61,52 @@ namespace QLNS.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Congtm.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static string Author {
+        internal static System.Drawing.Bitmap Add_user {
             get {
-                return ResourceManager.GetString("Author", resourceCulture);
+                object obj = ResourceManager.GetObject("Add_user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Delete_user {
+            get {
+                object obj = ResourceManager.GetObject("Delete_user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_user {
+            get {
+                object obj = ResourceManager.GetObject("icon_user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_User_64dp {
+            get {
+                object obj = ResourceManager.GetObject("icon_User_64dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_profile_edit {
+            get {
+                object obj = ResourceManager.GetObject("user_profile_edit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
