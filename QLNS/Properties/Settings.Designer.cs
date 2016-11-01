@@ -34,7 +34,51 @@ namespace QLNS.Properties {
                 this["Backup_CheckExit"] = value;
             }
         }
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool Login_IsSaveData
+        {
+            get
+            {
+                return ((bool)(this["Login_IsSaveData"]));
+            }
+            set
+            {
+                this["Login_IsSaveData"] = value;
+            }
+        }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Login_UserName
+        {
+            get
+            {
+                return ((string)(this["Login_UserName"]));
+            }
+            set
+            {
+                this["Login_UserName"] = value;
+            }
+        }
         
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Login_Password
+        {
+            get
+            {
+                return ((string)(this["Login_Password"]));
+            }
+            set
+            {
+                this["Login_Password"] = value;
+            }
+        }
+
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]

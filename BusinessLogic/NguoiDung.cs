@@ -32,6 +32,10 @@ namespace BusinessLogic
         {
             return access.Sua(nd);
         }
+        public bool DangNhap(string name, string pass)
+        {
+            return access.DangNhap(name, pass);
+        }
         public string AutoGenerateID()
         {
             //mã định danh
