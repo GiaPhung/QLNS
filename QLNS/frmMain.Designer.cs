@@ -429,7 +429,7 @@
             this.ribbonStatusBar1.ItemLinks.Add(this.lblTenNhaSach);
             this.ribbonStatusBar1.ItemLinks.Add(this.lblTimeNow);
             this.ribbonStatusBar1.ItemLinks.Add(this.lblDate);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 576);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 606);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
             this.ribbonStatusBar1.Size = new System.Drawing.Size(948, 23);
@@ -451,7 +451,7 @@
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 599);
+            this.ClientSize = new System.Drawing.Size(948, 629);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;

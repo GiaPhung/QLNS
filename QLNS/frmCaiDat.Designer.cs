@@ -45,7 +45,6 @@
             this.txtHoTen = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.txtMatKhauMoiAgain = new DevExpress.XtraEditors.TextEdit();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
@@ -55,6 +54,7 @@
             this.txtMatKhauCu = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
@@ -86,14 +86,14 @@
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(843, 507);
+            this.panel1.Size = new System.Drawing.Size(839, 503);
             this.panel1.TabIndex = 9;
             // 
             // labelControl13
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.labelControl13.Appearance.ForeColor = System.Drawing.Color.Green;
-            this.labelControl13.Location = new System.Drawing.Point(122, 22);
+            this.labelControl13.Location = new System.Drawing.Point(194, 22);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(309, 15);
             this.labelControl13.TabIndex = 9;
@@ -117,7 +117,7 @@
             this.groupControl2.Controls.Add(this.txtHoTen);
             this.groupControl2.Controls.Add(this.labelControl3);
             this.groupControl2.Controls.Add(this.labelControl4);
-            this.groupControl2.Location = new System.Drawing.Point(122, 201);
+            this.groupControl2.Location = new System.Drawing.Point(194, 201);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(568, 220);
             this.groupControl2.TabIndex = 6;
@@ -272,19 +272,6 @@
             this.labelControl4.TabIndex = 3;
             this.labelControl4.Text = "Ngày sinh:";
             // 
-            // btnLuu
-            // 
-            this.btnLuu.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnLuu.Appearance.Options.UseFont = true;
-            this.btnLuu.Location = new System.Drawing.Point(21, 110);
-            this.btnLuu.LookAndFeel.SkinName = "Pumpkin";
-            this.btnLuu.MaximumSize = new System.Drawing.Size(86, 42);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(86, 42);
-            this.btnLuu.TabIndex = 14;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
             // groupControl1
             // 
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -298,7 +285,7 @@
             this.groupControl1.Controls.Add(this.txtMatKhauCu);
             this.groupControl1.Controls.Add(this.labelControl1);
             this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Location = new System.Drawing.Point(122, 43);
+            this.groupControl1.Location = new System.Drawing.Point(194, 43);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(568, 152);
             this.groupControl1.TabIndex = 5;
@@ -388,10 +375,23 @@
             this.labelControl2.TabIndex = 3;
             this.labelControl2.Text = "Mật khẩu cũ:";
             // 
+            // btnLuu
+            // 
+            this.btnLuu.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLuu.Appearance.Options.UseFont = true;
+            this.btnLuu.Location = new System.Drawing.Point(43, 110);
+            this.btnLuu.LookAndFeel.SkinName = "Pumpkin";
+            this.btnLuu.MaximumSize = new System.Drawing.Size(86, 42);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(85, 42);
+            this.btnLuu.TabIndex = 14;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QLNS.Properties.Resources.icon_User_64dp;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(55, 22);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 64);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -403,7 +403,7 @@
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(843, 507);
+            this.ClientSize = new System.Drawing.Size(839, 503);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
