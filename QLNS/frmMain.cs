@@ -64,13 +64,10 @@ namespace QLNS
                 lapHD.Show();
             }
         }
-        //public void NapStatusBar()
-        //{
-        //    lblTenNhaSach.Caption = Settings.Default.StoreInfo_Name;
-        //}
+        
         private void frmMain_Load(object sender, EventArgs e)
         {
-           // NapStatusBar();
+            lblTenNhaSach.Caption = "NPSH Bookstore";
             timer.Start();
         }
 
