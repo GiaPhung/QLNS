@@ -129,5 +129,16 @@ namespace QLNS
                 CaiDat.Show();
             }
         }
+
+        private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Hide();
+            frmDangNhap dangNhap = new frmDangNhap();
+            dangNhap.ShowDialog();
+
+            currentUser = dangNhap.NguoiDung;
+            Settings.Default.User_CurrentUser = currentUser != null ? currentUser.MaNhanVien : null;
+            this.Show();
+        }
     }
 }
