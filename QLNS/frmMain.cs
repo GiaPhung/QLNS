@@ -137,5 +137,33 @@ namespace QLNS
             Settings.Default.User_CurrentUser = currentUser != null ? currentUser.MaNhanVien : null;
             this.Show();
         }
+
+        private void btnDanhSachKH_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form KhachHang = IsActive(typeof(frmKhachHang));
+
+            if (KhachHang != null)
+                KhachHang.Activate();
+            else
+            {
+                KhachHang = new frmKhachHang();
+                KhachHang.MdiParent = this;
+                KhachHang.Show();
+            }
+        }
+
+        private void btnSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form Sach = IsActive(typeof(frmSach));
+
+            if (Sach != null)
+                Sach.Activate();
+            else
+            {
+                Sach = new frmSach();
+                Sach.MdiParent = this;
+                Sach.Show();
+            }
+        }
     }
 }
