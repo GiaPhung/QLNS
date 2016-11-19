@@ -40,7 +40,7 @@
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
-            this.btnDanhSachKH = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
@@ -89,7 +89,7 @@
             this.barButtonItem7,
             this.barButtonItem8,
             this.barButtonItem9,
-            this.btnDanhSachKH,
+            this.barButtonItem10,
             this.barButtonItem11,
             this.barButtonItem12,
             this.skinRibbonGalleryBarItem1,
@@ -105,7 +105,6 @@
             this.lblTimeNow,
             this.lblDate});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(8);
             this.ribbonControl1.MaxItemId = 26;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -114,7 +113,7 @@
             this.ribbonPage3});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.Size = new System.Drawing.Size(2370, 346);
+            this.ribbonControl1.Size = new System.Drawing.Size(948, 147);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
             // 
@@ -175,7 +174,6 @@
             this.barButtonItem7.Id = 7;
             this.barButtonItem7.Name = "barButtonItem7";
             this.barButtonItem7.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSach_ItemClick);
             // 
             // barButtonItem8
             // 
@@ -193,14 +191,13 @@
             this.barButtonItem9.Name = "barButtonItem9";
             this.barButtonItem9.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
             // 
-            // btnDanhSachKH
+            // barButtonItem10
             // 
-            this.btnDanhSachKH.Caption = "Danh sách khách hàng";
-            this.btnDanhSachKH.Glyph = ((System.Drawing.Image)(resources.GetObject("btnDanhSachKH.Glyph")));
-            this.btnDanhSachKH.Id = 10;
-            this.btnDanhSachKH.Name = "btnDanhSachKH";
-            this.btnDanhSachKH.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnDanhSachKH.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDanhSachKH_ItemClick);
+            this.barButtonItem10.Caption = "Danh sách khách hàng";
+            this.barButtonItem10.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.Glyph")));
+            this.barButtonItem10.Id = 10;
+            this.barButtonItem10.Name = "barButtonItem10";
+            this.barButtonItem10.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // barButtonItem11
             // 
@@ -372,7 +369,7 @@
             // 
             // ribbonPageGroup4
             // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.btnDanhSachKH);
+            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem10);
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem11);
             this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem12);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
@@ -433,11 +430,10 @@
             this.ribbonStatusBar1.ItemLinks.Add(this.lblTenNhaSach);
             this.ribbonStatusBar1.ItemLinks.Add(this.lblTimeNow);
             this.ribbonStatusBar1.ItemLinks.Add(this.lblDate);
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 1545);
-            this.ribbonStatusBar1.Margin = new System.Windows.Forms.Padding(8);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 606);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(2370, 52);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(948, 23);
             // 
             // defaultLookAndFeel1
             // 
@@ -454,13 +450,12 @@
             // frmMain
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2370, 1597);
+            this.ClientSize = new System.Drawing.Size(948, 629);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(8);
             this.Name = "frmMain";
             this.Ribbon = this.ribbonControl1;
             this.ShowIcon = false;
@@ -490,7 +485,7 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
         private DevExpress.XtraBars.BarButtonItem barButtonItem9;
-        private DevExpress.XtraBars.BarButtonItem btnDanhSachKH;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.BarButtonItem barButtonItem11;
         private DevExpress.XtraBars.BarButtonItem barButtonItem12;
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
