@@ -11,18 +11,16 @@ using DevExpress.XtraEditors;
 
 namespace QLNS
 {
-    public partial class frmKhachHang : DevExpress.XtraEditors.XtraForm
+    public partial class frmThemKH : DevExpress.XtraEditors.XtraForm
     {
-        public frmKhachHang()
+        public frmThemKH()
         {
             InitializeComponent();
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            //ThemKH = new frmThemKH();
-            //ThemKH.MdiParent = this;
-            //ThemKH.Show();
+
         }
     }
 }
