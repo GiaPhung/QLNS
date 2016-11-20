@@ -14,8 +14,15 @@ namespace QLNS
     {
         public frmMain()
         {
+            frmDangNhap dangNhap = new frmDangNhap();
+            dangNhap.ShowDialog();
+
+            currentUser = dangNhap.NguoiDung;
+
             InitializeComponent();
+            Settings.Default.User_CurrentUser = currentUser != null ? currentUser.MaNhanVien : null;
         }
+        private DataTransfer.NguoiDung currentUser;
         private void timer_Tick(object sender, EventArgs e)
         {
             lblTimeNow.Caption = DateTime.Now.ToString("HH:mm:ss tt");
@@ -57,13 +64,10 @@ namespace QLNS
                 lapHD.Show();
             }
         }
-        //public void NapStatusBar()
-        //{
-        //    lblTenNhaSach.Caption = Settings.Default.StoreInfo_Name;
-        //}
+        
         private void frmMain_Load(object sender, EventArgs e)
         {
-           // NapStatusBar();
+            lblTenNhaSach.Caption = "NPSH Bookstore";
             timer.Start();
         }
 
@@ -81,32 +85,86 @@ namespace QLNS
             }
         }
 
-        private void btnLapPhieuNhapKho_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnPhucHoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form lapPhieuNhapKho = IsActive(typeof(frmLapPhieuNhapKho));
+            Form phucHoi = IsActive(typeof(frmPhucHoi));
 
-            if (lapPhieuNhapKho != null)
-                lapPhieuNhapKho.Activate();
+            if (phucHoi != null)
+                phucHoi.Activate();
             else
             {
-                lapPhieuNhapKho = new frmLapPhieuNhapKho();
-                lapPhieuNhapKho.MdiParent = this;
-                lapPhieuNhapKho.Show();
+                phucHoi = new frmPhucHoi();
+                phucHoi.MdiParent = this;
+                phucHoi.Show();
             }
         }
 
-        private void btnXemTinhTrang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnNguoiDung_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form xemTinhTrang = IsActive(typeof(frmXemTinhTrang));
+            Form NguoiDung = IsActive(typeof(frmNguoiDung));
 
-            if (xemTinhTrang != null)
-                xemTinhTrang.Activate();
+            if (NguoiDung != null)
+                NguoiDung.Activate();
             else
             {
-                xemTinhTrang = new frmXemTinhTrang();
-                xemTinhTrang.MdiParent = this;
-                xemTinhTrang.Show();
+                NguoiDung = new frmNguoiDung();
+                NguoiDung.MdiParent = this;
+                NguoiDung.Show();
             }
         }
+
+        private void btnCaiDat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form CaiDat = IsActive(typeof(frmCaiDat));
+
+            if (CaiDat != null)
+                CaiDat.Activate();
+            else
+            {
+                CaiDat = new frmCaiDat();
+                CaiDat.MdiParent = this;
+                CaiDat.Show();
+            }
+        }
+
+        private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Hide();
+            frmDangNhap dangNhap = new frmDangNhap();
+            dangNhap.ShowDialog();
+
+            currentUser = dangNhap.NguoiDung;
+            Settings.Default.User_CurrentUser = currentUser != null ? currentUser.MaNhanVien : null;
+            this.Show();
+        }
+
+        private void btnDanhSachKH_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form KhachHang = IsActive(typeof(frmKhachHang));
+
+            if (KhachHang != null)
+                KhachHang.Activate();
+            else
+            {
+                KhachHang = new frmKhachHang();
+                KhachHang.MdiParent = this;
+                KhachHang.Show();
+            }
+        }
+
+        private void btnSach_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form Sach = IsActive(typeof(frmSach));
+
+            if (Sach != null)
+                Sach.Activate();
+            else
+            {
+                Sach = new frmSach();
+                Sach.MdiParent = this;
+                Sach.Show();
+            }
+        }
+
     }
 }

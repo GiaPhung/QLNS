@@ -108,7 +108,7 @@ namespace QLNS
         {
             try
             {
-                string NameDatabases = "[" + Environment.CurrentDirectory + @"\DATABASES\QUANLYBANHANG.MDF" + "]";
+                string NameDatabases = "[" + Environment.CurrentDirectory + @"\Database\QuanLyNhaSach.MDF" + "]";
 
                 string sqlCommand_0 = "USE [master]";
 

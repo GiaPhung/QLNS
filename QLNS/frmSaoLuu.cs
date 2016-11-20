@@ -21,7 +21,6 @@ namespace QLNS
             InitializeComponent();
         }
 
-        private string MaSL;
         protected SqlConnection _connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""|DataDirectory|\Database\QuanLyNhaSach.mdf"";Integrated Security=True");
 
         public SqlConnection Connection
@@ -165,9 +164,9 @@ namespace QLNS
         {
             try
             {
-                string NameDatabases = "[" + Environment.CurrentDirectory + @"\DATABASES\QUANLYBANHANG.MDF" + "]";
+                string NameDatabases = "[" + Environment.CurrentDirectory + @"\DATABASE\QuanLyNhaSach.MDF" + "]";
 
-                string str_Backup = @"WITH NOFORMAT, INIT,  NAME = N'" + Environment.CurrentDirectory + @"\DATABASES\QUANLYBANHANG.MDF" + "-Full Database Backup', SKIP, NOREWIND, NOUNLOAD,  STATS = 10";
+                string str_Backup = @"WITH NOFORMAT, INIT,  NAME = N'" + Environment.CurrentDirectory + @"\DATABASE\QuanLyNhaSach.MDF" + "-Full Database Backup', SKIP, NOREWIND, NOUNLOAD,  STATS = 10";
 
                 string sqlCommand = @"BACKUP DATABASE " + NameDatabases + "TO DISK = N'" + Duongdan + @"\" + TenSl + ".bak'" + str_Backup;
 
