@@ -86,6 +86,7 @@
             this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem21 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridCTSP)).BeginInit();
@@ -837,10 +838,6 @@
         private DevExpress.XtraEditors.LookUpEdit cboMaKhachHang;
         private DevExpress.XtraEditors.SpinEdit txtThanhTien;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
-        private System.Windows.Forms.Label lblTongChonSanPham;
-        private System.Windows.Forms.Label lblTongSanPham;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem19;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem20;
         private DevExpress.XtraGrid.GridControl gridCTSP;
         private DevExpress.XtraGrid.Views.Grid.GridView gridViewCTSP;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
@@ -848,5 +845,10 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem21;
+        private System.Windows.Forms.Label lblTongChonSanPham;
+        private System.Windows.Forms.Label lblTongSanPham;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem19;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem20;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }

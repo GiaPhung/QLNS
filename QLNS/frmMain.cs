@@ -80,5 +80,33 @@ namespace QLNS
                 saoLuu.Show();
             }
         }
+
+        private void btnLapPhieuNhapKho_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form lapPhieuNhapKho = IsActive(typeof(frmLapPhieuNhapKho));
+
+            if (lapPhieuNhapKho != null)
+                lapPhieuNhapKho.Activate();
+            else
+            {
+                lapPhieuNhapKho = new frmLapPhieuNhapKho();
+                lapPhieuNhapKho.MdiParent = this;
+                lapPhieuNhapKho.Show();
+            }
+        }
+
+        private void btnXemTinhTrang_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form xemTinhTrang = IsActive(typeof(frmXemTinhTrang));
+
+            if (xemTinhTrang != null)
+                xemTinhTrang.Activate();
+            else
+            {
+                xemTinhTrang = new frmXemTinhTrang();
+                xemTinhTrang.MdiParent = this;
+                xemTinhTrang.Show();
+            }
+        }
     }
 }

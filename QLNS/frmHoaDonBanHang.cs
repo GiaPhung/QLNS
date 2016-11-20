@@ -188,5 +188,7 @@ namespace QLNS
         {
             btnSua_Click(sender, e);
         }
+
+        
     }
 }

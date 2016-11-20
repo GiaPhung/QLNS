@@ -34,8 +34,8 @@
             this.btnLapHoaDonMoi = new DevExpress.XtraBars.BarButtonItem();
             this.btnXemCacHoaDon = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnLapPhieuNhapKho = new DevExpress.XtraBars.BarButtonItem();
+            this.btnXemTinhTrang = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
@@ -83,8 +83,8 @@
             this.btnLapHoaDonMoi,
             this.btnXemCacHoaDon,
             this.barButtonItem3,
-            this.barButtonItem4,
-            this.barButtonItem5,
+            this.btnLapPhieuNhapKho,
+            this.btnXemTinhTrang,
             this.barButtonItem6,
             this.barButtonItem7,
             this.barButtonItem8,
@@ -143,21 +143,23 @@
             this.barButtonItem3.Name = "barButtonItem3";
             this.barButtonItem3.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
-            // barButtonItem4
+            // btnLapPhieuNhapKho
             // 
-            this.barButtonItem4.Caption = "Lập phiếu nhập kho";
-            this.barButtonItem4.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.Glyph")));
-            this.barButtonItem4.Id = 4;
-            this.barButtonItem4.Name = "barButtonItem4";
-            this.barButtonItem4.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnLapPhieuNhapKho.Caption = "Lập phiếu nhập kho";
+            this.btnLapPhieuNhapKho.Glyph = ((System.Drawing.Image)(resources.GetObject("btnLapPhieuNhapKho.Glyph")));
+            this.btnLapPhieuNhapKho.Id = 4;
+            this.btnLapPhieuNhapKho.Name = "btnLapPhieuNhapKho";
+            this.btnLapPhieuNhapKho.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnLapPhieuNhapKho.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLapPhieuNhapKho_ItemClick);
             // 
-            // barButtonItem5
+            // btnXemTinhTrang
             // 
-            this.barButtonItem5.Caption = "Xem tình trạng";
-            this.barButtonItem5.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.Glyph")));
-            this.barButtonItem5.Id = 5;
-            this.barButtonItem5.Name = "barButtonItem5";
-            this.barButtonItem5.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnXemTinhTrang.Caption = "Xem tình trạng";
+            this.btnXemTinhTrang.Glyph = ((System.Drawing.Image)(resources.GetObject("btnXemTinhTrang.Glyph")));
+            this.btnXemTinhTrang.Id = 5;
+            this.btnXemTinhTrang.Name = "btnXemTinhTrang";
+            this.btnXemTinhTrang.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnXemTinhTrang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnXemTinhTrang_ItemClick);
             // 
             // barButtonItem6
             // 
@@ -250,7 +252,7 @@
             this.barButtonItem16.Caption = "Sao lưu";
             this.barButtonItem16.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem16.Glyph")));
             this.barButtonItem16.Id = 17;
-            this.barButtonItem16.Name = "btnSaoLuu";
+            this.barButtonItem16.Name = "barButtonItem16";
             this.barButtonItem16.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonItem16.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSaoLuu_ItemClick);
             // 
@@ -340,8 +342,8 @@
             // 
             // ribbonPageGroup2
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnLapPhieuNhapKho);
+            this.ribbonPageGroup2.ItemLinks.Add(this.btnXemTinhTrang);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.ShowCaptionButton = false;
             this.ribbonPageGroup2.Text = "Kho hàng";
@@ -476,8 +478,8 @@
         private DevExpress.XtraBars.BarButtonItem btnLapHoaDonMoi;
         private DevExpress.XtraBars.BarButtonItem btnXemCacHoaDon;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem btnLapPhieuNhapKho;
+        private DevExpress.XtraBars.BarButtonItem btnXemTinhTrang;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.BarButtonItem barButtonItem8;
