@@ -87,10 +87,7 @@ namespace QLNS
             NapGiaoDien();
         }
 
-        private void chkTheoSanPham_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
+       
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
@@ -103,7 +100,7 @@ namespace QLNS
             pn.Text = "Lập phiếu nhập kho";
             pn.MdiParent = this.MdiParent;
             pn.Show();
-            NapGiaoDien();
+            
         }
 
         private void chkTimTheoSanPham_CheckedChanged(object sender, EventArgs e)
