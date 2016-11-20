@@ -363,7 +363,7 @@
             this.ClientSize = new System.Drawing.Size(936, 353);
             this.Controls.Add(this.layoutControl1);
             this.Name = "frmXemTinhTrang";
-            this.Text = "frmXemTinhTrang";
+            this.Text = "Xem tình trạng";
             this.Load += new System.EventHandler(this.frmXemTinhTrang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
