@@ -12,7 +12,7 @@ namespace DataAccess
 {
     public abstract class DBConnect
     {
-        protected SqlConnection _connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\QLNS\DataAccess\Database\QuanLyNhaSach.mdf;Integrated Security=True");
+        protected SqlConnection _connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""|DataDirectory|\Database\QuanLyNhaSach.mdf"";Integrated Security=True");
 
 
         public SqlConnection Connection
