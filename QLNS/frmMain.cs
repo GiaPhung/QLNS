@@ -193,5 +193,17 @@ namespace QLNS
                 xemTinhTrang.Show();
             }
         }
+
+        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmThemKH frm = new frmThemKH();
+            frm.ShowDialog();
+        }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmThemSach frm = new frmThemSach();
+            frm.ShowDialog();
+        }
     }
 }

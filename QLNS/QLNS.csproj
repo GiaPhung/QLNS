@@ -50,8 +50,10 @@
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v15.1" />
     <Reference Include="DevExpress.Data.v15.1" />
+    <Reference Include="DevExpress.DataAccess.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v15.1.Core" />
     <Reference Include="DevExpress.Utils.v15.1" />
+    <Reference Include="DevExpress.Xpo.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v15.1" />
     <Reference Include="DevExpress.Sparkline.v15.1.Core" />
     <Reference Include="DevExpress.XtraEditors.v15.1" />
@@ -152,6 +154,18 @@
     <Compile Include="frmThemKH.Designer.cs">
       <DependentUpon>frmThemKH.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThemSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemSach.Designer.cs">
+      <DependentUpon>frmThemSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemLoai.Designer.cs">
+      <DependentUpon>frmThemLoai.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmCaiDat.resx">
       <DependentUpon>frmCaiDat.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +215,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmThemKH.resx">
       <DependentUpon>frmThemKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemSach.resx">
+      <DependentUpon>frmThemSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemLoai.resx">
+      <DependentUpon>frmThemLoai.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">

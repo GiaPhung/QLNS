@@ -28,19 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKhachHang));
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnDanhSachKH = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.btnSua = new DevExpress.XtraEditors.SimpleButton();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDanhSachKH)).BeginInit();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.gridKH = new DevExpress.XtraGrid.GridControl();
+            this.gridViewKhachHang = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.gridKH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewKhachHang)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -49,63 +54,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(1655, 40);
             this.textBox1.TabIndex = 11;
-            // 
-            // btnDanhSachKH
-            // 
-            this.btnDanhSachKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.btnDanhSachKH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
-            this.btnDanhSachKH.Location = new System.Drawing.Point(12, 187);
-            this.btnDanhSachKH.Name = "btnDanhSachKH";
-            this.btnDanhSachKH.RowTemplate.Height = 40;
-            this.btnDanhSachKH.Size = new System.Drawing.Size(2224, 824);
-            this.btnDanhSachKH.TabIndex = 12;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Mã Khách Hàng";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Họ Tên";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 200;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Giới Tính";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 50;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Địa Chỉ";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 200;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Số Điện Thoại";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 150;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Email";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 150;
             // 
             // btnThem
             // 
@@ -135,19 +83,100 @@
             this.btnXoa.TabIndex = 10;
             this.btnXoa.Text = "Xóa";
             // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            // 
+            // gridKH
+            // 
+            this.gridKH.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(8);
+            gridLevelNode1.RelationName = "Level1";
+            this.gridKH.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode1});
+            this.gridKH.Location = new System.Drawing.Point(12, 144);
+            this.gridKH.MainView = this.gridViewKhachHang;
+            this.gridKH.Name = "gridKH";
+            this.gridKH.Size = new System.Drawing.Size(2224, 936);
+            this.gridKH.TabIndex = 12;
+            this.gridKH.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewKhachHang});
+            // 
+            // gridViewKhachHang
+            // 
+            this.gridViewKhachHang.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1,
+            this.gridColumn2,
+            this.gridColumn3,
+            this.gridColumn4,
+            this.gridColumn6,
+            this.gridColumn7});
+            this.gridViewKhachHang.GridControl = this.gridKH;
+            this.gridViewKhachHang.Name = "gridViewKhachHang";
+            this.gridViewKhachHang.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "Mã Khách Hàng";
+            this.gridColumn1.FieldName = "MaKhachHang";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "Họ Tên";
+            this.gridColumn2.FieldName = "HoTen";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 1;
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.Caption = "Giới Tính";
+            this.gridColumn3.FieldName = "GioiTinh";
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 2;
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.Caption = "Địa Chỉ";
+            this.gridColumn4.FieldName = "DiaChi";
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 3;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "Số Điện Thoại";
+            this.gridColumn6.FieldName = "SoDienThoai";
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 4;
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.Caption = "Email";
+            this.gridColumn7.FieldName = "Email";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 5;
+            // 
             // frmKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2248, 1023);
+            this.ClientSize = new System.Drawing.Size(2292, 1092);
+            this.Controls.Add(this.gridKH);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnDanhSachKH);
             this.Controls.Add(this.textBox1);
             this.Name = "frmKhachHang";
             this.Text = "Danh Sách Khách Hàng";
-            ((System.ComponentModel.ISupportInitialize)(this.btnDanhSachKH)).EndInit();
+            this.Load += new System.EventHandler(this.frmKhachHang_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridKH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewKhachHang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,15 +184,17 @@
 
         #endregion
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView btnDanhSachKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private DevExpress.XtraEditors.SimpleButton btnThem;
         private DevExpress.XtraEditors.SimpleButton btnSua;
         private DevExpress.XtraEditors.SimpleButton btnXoa;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.XtraGrid.GridControl gridKH;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewKhachHang;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
     }
 }

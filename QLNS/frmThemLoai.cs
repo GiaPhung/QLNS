@@ -11,21 +11,11 @@ using DevExpress.XtraEditors;
 
 namespace QLNS
 {
-    public partial class frmThemKH : DevExpress.XtraEditors.XtraForm
+    public partial class frmThemLoai : DevExpress.XtraEditors.XtraForm
     {
-        public frmThemKH()
+        public frmThemLoai()
         {
             InitializeComponent();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
