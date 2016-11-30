@@ -110,6 +110,12 @@
     <Compile Include="frmLapPhieuNhapKho.Designer.cs">
       <DependentUpon>frmLapPhieuNhapKho.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLapPhieuThuTien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLapPhieuThuTien.Designer.cs">
+      <DependentUpon>frmLapPhieuThuTien.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,12 @@
     </Compile>
     <Compile Include="frmSaoLuu.Designer.cs">
       <DependentUpon>frmSaoLuu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThayDoiQuyDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThayDoiQuyDinh.Designer.cs">
+      <DependentUpon>frmThayDoiQuyDinh.cs</DependentUpon>
     </Compile>
     <Compile Include="frmXemTinhTrang.cs">
       <SubType>Form</SubType>
@@ -184,6 +196,9 @@
     <EmbeddedResource Include="frmLapPhieuNhapKho.resx">
       <DependentUpon>frmLapPhieuNhapKho.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLapPhieuThuTien.resx">
+      <DependentUpon>frmLapPhieuThuTien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSaoLuu.resx">
       <DependentUpon>frmSaoLuu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThayDoiQuyDinh.resx">
+      <DependentUpon>frmThayDoiQuyDinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmXemTinhTrang.resx">
       <DependentUpon>frmXemTinhTrang.cs</DependentUpon>
@@ -260,22 +278,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icon_User_32dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Icon1.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\icon_User_64dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1477996005_users-9.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1477996030_users-16.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1477997529_user.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\add_user.png" />
@@ -288,6 +291,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Delete_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Icon_edit_64dp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

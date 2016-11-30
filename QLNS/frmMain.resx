@@ -572,11 +572,60 @@
         2pCNzhlQMiAcOlUAa0M2OmdAyYBw6LwFjECOmcgxEznmYcsBpVuEDOaayiUAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="barButtonItem1.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAB10RVh0VGl0
+        bGUAQ2FyZDtDYXJkVmlldztWaWV3Q2FyZDuRh0uNAAAAbUlEQVQ4T6WTwQnAMAhFs2CXKu7jtbv03nsn
+        +CUBS1KlmvjhQRB80UAKgBRmcYZCRMjQBKtRgvO6se1Ho569KIE0C17CAmZW1ChBagVplvSS0ARy85e/
+        hAWhCfr9Be8dBsFKXkEG84PMYBbjoDwxtjU+9MZUnQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="barButtonItem1.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAB10RVh0VGl0
+        bGUAQ2FyZDtDYXJkVmlldztWaWV3Q2FyZDuRh0uNAAABcUlEQVRYR+2Uy0rDQBSG+4KCl42gKFJw46L6
+        ChJFpRgVoaKPoBjdiBaxtt6WVtHqQl2oNCrV4qVB6eLYiTPpJT/MJOLURX/4YPhP4HwhlwgRNRVY6gSW
+        OoGlTmCpE+9gGAbpBAroSktAWaD0WaaFjRz1mynqie+4Z+erzKfhoywQXz2httHNOsz1Uz4NH2WBjrGk
+        T6BrPMmn4aMs0D217RNgj6IxlmUpIaIsMLF87BOYXMnyaTVoGUJEWeAq/0rtxpa3nJ1Z99soC7DsndvU
+        N51yyZzZvK0PuluEiJIAWzwws0v2i8MbooeiQ9HZNB1dPvLmJ2gZQkQqcG2/eV9AbPGA8s8lui980FBi
+        3+3Y7PbpnV8dPFIB9PI1Yq5V/wfobhEiUoHeyqeGltbC3gkRtAwhIhWIzqXh0loG5zP86uCRCmRvCjS8
+        dEid4E/IupHK7OKuyK8OHqnAX6cl8H8FdOITaBaw1AksdQJLncBSHxT5BqgHJYzS5Wc1AAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="barButtonItem2.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAANnRFWHRUaXRsZQBQYWdlIFNl
+        dHVwO1NldHVwO0N1c3RvbWl6O0Rlc2lnbjtTZXR0aW5nO1Byb3BlcnTuO2FtAAAA1klEQVQ4T72PMQrC
+        QBBFvZPnSEQvYifWGtscwEYrz6Ap1CZiGkELRcRKAsEDKEbNd3bZ1c2CmyyCHz4zzPAfMxUAP/ndeJ4H
+        gzNRq2qYOQcwie193z/qECsAKdUhVgDVJDuAqv8CWoMlGr0AweqEa/rgMyvAbBOj1p3A6Ywxmh/4rBSg
+        PYyw2CW8n65juARgEKZSgGY/RJ1OD7cJnlnGwxLARL0ZwH5mAVecLx3tz3xfCLjc7vxnNSzNIFTNAF0i
+        pNqhcR7wzVI6hPQBFJkCsjoCQBeg8gIooSn31aifqgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="barButtonItem2.LargeGlyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAANnRFWHRUaXRsZQBQYWdlIFNl
+        dHVwO1NldHVwO0N1c3RvbWl6O0Rlc2lnbjtTZXR0aW5nO1Byb3BlcnTuO2FtAAABhUlEQVRYR+2UzUrE
+        MBRG+07zFgMufAw3gq8gddmt4E/fY3TjQvQBBJmFdKM4S8Gt4sR7OklJOtf+0aYbPziU3Ca9hyQziTFm
+        VtRiTNRiTNRiTNQipGlqevImLAXW7qH1ALUIskge3cP8LMu+8zxfyrD+rWDsoxZhiEBRFKpENAGiSUQV
+        IHWJ6ALESnwhMYsAcRLybu9iOtQiDBFoYCNT1D5qEVg4Vuy31D5qEf4F+ggcXzyYw7Pb8nl9szbPrx/2
+        zS6TCfxst+Xz5OrRHJyuKo7O783d03v5jky6AzsFXcLtxKQCfuoSHAcZXYCzphlhB9wuEF+AeWR0AS4c
+        DXwJF1+AeWSSHXBNKgm5kJerdSAw2Q5wtn6jJl42n3aV3kctQpMAt5tbrjXUQEKeah+1CE0ChN95Hwlh
+        ISQgyyuCgU+bAGEnOA7O2v0Teg01SglZWhEMfLoIaLHb3cRCplV9gqY+CAyBtEnwfUfQdAykgYPtnlXg
+        Twl/frB4DKRBm0S3OxAHk/wCK3OEgFO2JNcAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="defaultLookAndFeel1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="xtraTabbedMdiManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>184, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
   </metadata>
   <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>367, 17</value>

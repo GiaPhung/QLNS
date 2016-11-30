@@ -205,5 +205,25 @@ namespace QLNS
             frmThemSach frm = new frmThemSach();
             frm.ShowDialog();
         }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form LapPhieuThuTien = IsActive(typeof(frmLapPhieuThuTien));
+
+            if (LapPhieuThuTien != null)
+                LapPhieuThuTien.Activate();
+            else
+            {
+                LapPhieuThuTien = new frmLapPhieuThuTien(currentUser);
+                LapPhieuThuTien.MdiParent = this;
+                LapPhieuThuTien.Show();
+            }
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmThayDoiQuyDinh ThayDoiQuyDinh = new frmThayDoiQuyDinh();
+            ThayDoiQuyDinh.ShowDialog();
+        }
     }
 }

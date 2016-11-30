@@ -73,9 +73,29 @@ namespace QLNS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Add_user1 {
+            get {
+                object obj = ResourceManager.GetObject("Add_user1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Delete_user {
             get {
                 object obj = ResourceManager.GetObject("Delete_user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icon_edit_64dp {
+            get {
+                object obj = ResourceManager.GetObject("Icon_edit_64dp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

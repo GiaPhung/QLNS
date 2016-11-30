@@ -223,7 +223,6 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.Location = new System.Drawing.Point(343, 364);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(61, 22);
@@ -233,7 +232,6 @@
             // 
             // btnXoaAll
             // 
-            this.btnXoaAll.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaAll.Image")));
             this.btnXoaAll.Location = new System.Drawing.Point(408, 364);
             this.btnXoaAll.Name = "btnXoaAll";
             this.btnXoaAll.Size = new System.Drawing.Size(77, 22);
@@ -310,7 +308,6 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
             this.btnLuu.Location = new System.Drawing.Point(685, 364);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(92, 22);
@@ -321,7 +318,6 @@
             // 
             // btnOpen1
             // 
-            this.btnOpen1.Image = ((System.Drawing.Image)(resources.GetObject("btnOpen1.Image")));
             this.btnOpen1.Location = new System.Drawing.Point(645, 364);
             this.btnOpen1.Name = "btnOpen1";
             this.btnOpen1.Size = new System.Drawing.Size(26, 22);

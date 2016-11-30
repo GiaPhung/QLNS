@@ -50,17 +50,19 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(581, 71);
+            this.textBox1.Location = new System.Drawing.Point(232, 28);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1655, 40);
+            this.textBox1.Size = new System.Drawing.Size(664, 21);
             this.textBox1.TabIndex = 11;
             // 
             // btnThem
             // 
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
-            this.btnThem.Location = new System.Drawing.Point(12, 40);
+            this.btnThem.Location = new System.Drawing.Point(5, 16);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(183, 98);
+            this.btnThem.Size = new System.Drawing.Size(73, 39);
             this.btnThem.TabIndex = 7;
             this.btnThem.Text = "Thêm";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
@@ -68,18 +70,20 @@
             // btnSua
             // 
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
-            this.btnSua.Location = new System.Drawing.Point(389, 40);
+            this.btnSua.Location = new System.Drawing.Point(156, 16);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(186, 98);
+            this.btnSua.Size = new System.Drawing.Size(74, 39);
             this.btnSua.TabIndex = 9;
             this.btnSua.Text = "Sửa";
             // 
             // btnXoa
             // 
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
-            this.btnXoa.Location = new System.Drawing.Point(201, 40);
+            this.btnXoa.Location = new System.Drawing.Point(80, 16);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(182, 98);
+            this.btnXoa.Size = new System.Drawing.Size(73, 39);
             this.btnXoa.TabIndex = 10;
             this.btnXoa.Text = "Xóa";
             // 
@@ -89,14 +93,14 @@
             // 
             // gridKH
             // 
-            this.gridKH.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(8);
             gridLevelNode1.RelationName = "Level1";
             this.gridKH.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
             gridLevelNode1});
-            this.gridKH.Location = new System.Drawing.Point(12, 144);
+            this.gridKH.Location = new System.Drawing.Point(5, 57);
             this.gridKH.MainView = this.gridViewKhachHang;
+            this.gridKH.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.gridKH.Name = "gridKH";
-            this.gridKH.Size = new System.Drawing.Size(2224, 936);
+            this.gridKH.Size = new System.Drawing.Size(890, 369);
             this.gridKH.TabIndex = 12;
             this.gridKH.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewKhachHang});
@@ -164,14 +168,15 @@
             // 
             // frmKhachHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 33F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2292, 1092);
+            this.ClientSize = new System.Drawing.Size(545, 292);
             this.Controls.Add(this.gridKH);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "frmKhachHang";
             this.Text = "Danh Sách Khách Hàng";
             this.Load += new System.EventHandler(this.frmKhachHang_Load);
